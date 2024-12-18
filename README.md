@@ -34,19 +34,6 @@ El frontend utiliza el endpoint de la API para mostrar traducciones dinámicas e
    - Si la traducción existe, se muestra en la interfaz del usuario.  
    - Si no hay traducción disponible, se muestra un mensaje de error en la interfaz para informar al usuario.  
 
-## Ejemplo de Uso  
-1. El usuario selecciona el locale `es-cr` en la interfaz.  
-2. El frontend envía una solicitud a la API con los parámetros:  
-   - `project_id`: 1  
-   - `token_id`: 2  
-   - `locale`: `es-cr`  
-3. La API responde con la traducción correspondiente o, en su defecto, con la traducción en el locale predeterminado (`es-es`).  
-4. El frontend muestra la traducción en la interfaz.  
-
-## Comportamiento de Fallback  
-- Si el locale solicitado no tiene una traducción específica, el sistema utiliza el locale predeterminado (`es-es`).  
-- Si no hay traducción disponible para ningún locale, se muestra un mensaje de error: "Translation not available."  
-
 ## Vista de la Interfaz  
 A continuación, se muestra una imagen de cómo se ve la interfaz del frontend:  
 <img src="./LansysScreen.png" alt="Vista de la Interfaz" style="display: block; margin: 0 auto; max-width: 100%;" />  
