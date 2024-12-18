@@ -1,9 +1,9 @@
 Frontend LangSys
 
-Para la solución del lado del frontend usé Vue.js.
+Este proyecto implementa la solución del lado del frontend utilizando Vue.js. Permite mostrar traducciones dinámicas en diferentes idiomas y regiones, interactuando con un endpoint de API desarrollado en Laravel.
 Requisitos Previos
 
-Asegúrate de tener instalado lo siguiente:
+Asegúrate de tener instalado lo siguiente antes de comenzar:
 
     Node.js (versión 14 o superior)
 
@@ -11,7 +11,7 @@ Asegúrate de tener instalado lo siguiente:
 
 Pasos para Levantar el Proyecto
 
-Sigue estos pasos para configurar y levantar el proyecto en tu entorno local:
+Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
     Clona el repositorio:
     bash
@@ -51,13 +51,13 @@ src/
 
 Descripción de Componentes y Servicios
 
-    LangComponent.vue: Este componente incluye la solución que necesitas.
+    LangComponent.vue: Este componente incluye la lógica principal para interactuar con la API y mostrar las traducciones dinámicas.
 
-    api.js: Este archivo contiene todas las peticiones a la API.
+    api.js: Este archivo contiene todas las funciones para realizar peticiones a la API del backend.
 
 Funcionalidad en el Frontend
 
-El frontend utilizará este endpoint para mostrar traducciones dinámicas en diferentes idiomas y regiones. A continuación, se explica cómo funciona:
+El frontend utiliza el endpoint de la API para mostrar traducciones dinámicas en diferentes idiomas y regiones. A continuación, se explica cómo funciona:
 
     Selección de idioma y región:
 
