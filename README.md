@@ -85,3 +85,6 @@ Comportamiento de Fallback
 Vista de la Interfaz
 
 A continuación, se muestra una imagen de cómo se ve la interfaz del frontend: <img src="./LansysScreen.png" alt="Vista de la Interfaz" style="display: block; margin: 0 auto; max-width: 100%;" />
+
+
+Ahora puedes copiar todo el contenido y pegarlo directamente en tu archivo `README.md`.
