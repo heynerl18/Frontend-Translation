@@ -86,3 +86,38 @@ El frontend utiliza el endpoint de la API para mostrar traducciones dinámicas e
         Si la traducción existe, se muestra en la interfaz del usuario.
 
         Si no hay traducción disponible, se muestra un mensaje de error en la interfaz para informar al usuario.
+
+Ejemplo de Uso
+
+    El usuario selecciona el locale es-cr en la interfaz.
+
+    El frontend envía una solicitud a la API con los parámetros:
+
+        project_id: 1
+
+        token_id: 2
+
+        locale: es-cr
+
+    La API responde con la traducción correspondiente o, en su defecto, con la traducción en el locale predeterminado (es-es).
+
+    El frontend muestra la traducción en la interfaz.
+
+Comportamiento de Fallback
+
+    Si el locale solicitado no tiene una traducción específica, el sistema utiliza el locale predeterminado (es-es).
+
+    Si no hay traducción disponible para ningún locale, se muestra un mensaje de error: "Translation not available."
+
+Vista de la Interfaz
+
+A continuación, se muestra una imagen de cómo se ve la interfaz del frontend:
+
+Vista de la Interfaz
+
+¡Gracias por usar este proyecto! Si tienes alguna duda o sugerencia, no dudes en contactarme.
+Notas:
+
+    Asegúrate de que el nombre de la imagen (vista_interfaz.png) coincida con el nombre del archivo que tienes en la raíz del proyecto.
+
+    Si el nombre de la imagen es diferente, reemplázalo en la ruta ![Vista de la Interfaz](./nombre_de_tu_imagen.png).
