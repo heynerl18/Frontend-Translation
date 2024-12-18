@@ -1,41 +1,88 @@
-# Frontend LangSys
+Frontend LangSys
 
-Para la solucion del lado del frontend usé vue.js
-
-## Requisitos Previos
+Para la solución del lado del frontend usé Vue.js.
+Requisitos Previos
 
 Asegúrate de tener instalado lo siguiente:
 
-- [Node.js](https://nodejs.org/) (versión 14 o superior)
-- [npm](https://www.npmjs.com/get-npm)
+    Node.js (versión 14 o superior)
 
-## Pasos para Levantar el Proyecto
+    npm
+
+Pasos para Levantar el Proyecto
 
 Sigue estos pasos para configurar y levantar el proyecto en tu entorno local:
 
-1. **Clona el repositorio**:
-   ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+    Clona el repositorio:
+    bash
+    Copy
 
-2. Navega a la carpeta del proyecto:
-  `cd tu_repositorio`
+    git clone https://github.com/tu_usuario/tu_repositorio.git
 
-3. Instala las dependencias:
-  `npm install`
+    Navega a la carpeta del proyecto:
+    bash
+    Copy
 
-4. Inicia el servidor de desarrollo:
-  `npm run dev`
+    cd tu_repositorio
 
+    Instala las dependencias:
+    bash
+    Copy
 
-## Estructura del Proyecto
+    npm install
 
-En la carpeta `src/` encontrarás la siguiente estructura:
+    Inicia el servidor de desarrollo:
+    bash
+    Copy
 
-src/ ├── components/ # Contiene todos los componentes de Vue │ └── LangComponent.vue # Componente que contiene la solución ├── services/ # Archivos para interactuar con la API │ └── api.js # Archivo con las peticiones a la API └── ...
+    npm run dev
 
+Estructura del Proyecto
 
-### Descripción de Componentes y Servicios
+En la carpeta src/ encontrarás la siguiente estructura:
+Copy
 
-- **LangComponent.vue**: Este componente incluye la solución que necesitas.
-- **api.js**: Este archivo contiene todas las peticiones a la API.
+src/
+├── components/ # Contiene todos los componentes de Vue
+│   └── LangComponent.vue # Componente que contiene la solución
+├── services/ # Archivos para interactuar con la API
+│   └── api.js # Archivo con las peticiones a la API
+└── ...
 
+Descripción de Componentes y Servicios
+
+    LangComponent.vue: Este componente incluye la solución que necesitas.
+
+    api.js: Este archivo contiene todas las peticiones a la API.
+
+Funcionalidad en el Frontend
+
+El frontend utilizará este endpoint para mostrar traducciones dinámicas en diferentes idiomas y regiones. A continuación, se explica cómo funciona:
+
+    Selección de idioma y región:
+
+        Un usuario selecciona un idioma y región específicos, por ejemplo, es-cr (español de Costa Rica).
+
+    Solicitud al endpoint de la API:
+
+        El frontend realiza una solicitud al endpoint de la API con los siguientes parámetros:
+
+            project_id: ID del proyecto.
+
+            token_id: ID del token que se desea traducir.
+
+            locale: Código del locale seleccionado por el usuario (por ejemplo, es-cr).
+
+    Respuesta de la API:
+
+        Si la traducción existe para el locale seleccionado, se devuelve la traducción correspondiente y se muestra en la interfaz.
+
+        Si no existe una traducción para el locale seleccionado, se devuelve la traducción en el locale predeterminado (es-es).
+
+        Si no hay ninguna traducción disponible (ni para el locale seleccionado ni para el predeterminado), se devuelve un mensaje de error indicando que la traducción no está disponible.
+
+    Visualización en la interfaz:
+
+        Si la traducción existe, se muestra en la interfaz del usuario.
+
+        Si no hay traducción disponible, se muestra un mensaje de error en la interfaz para informar al usuario.
