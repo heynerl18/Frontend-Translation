@@ -1,7 +1,5 @@
-Frontend LangSys
-
-Este proyecto implementa la solución del lado del frontend utilizando Vue.js. Permite mostrar traducciones dinámicas en diferentes idiomas y regiones, interactuando con un endpoint de API desarrollado en Laravel.
-
+# Frontend LangSys  
+Este proyecto implementa la solución del lado del frontend utilizando Vue.js. Permite mostrar traducciones dinámicas en diferentes idiomas y regiones, interactuando con un endpoint de API desarrollado en Laravel.  
 
 ## Estructura del Proyecto  
 En la carpeta `src/` encontrarás la siguiente estructura: 
