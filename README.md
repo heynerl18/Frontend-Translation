@@ -50,10 +50,13 @@ src/
 └── ...
 
 Descripción de Componentes y Servicios
+<div style="user-select: none;">
 
     LangComponent.vue: Este componente incluye la lógica principal para interactuar con la API y mostrar las traducciones dinámicas.
 
     api.js: Este archivo contiene todas las funciones para realizar peticiones a la API del backend.
+
+</div>
 
 Funcionalidad en el Frontend
 
