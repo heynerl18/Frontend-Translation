@@ -112,12 +112,4 @@ Comportamiento de Fallback
 Vista de la Interfaz
 
 A continuación, se muestra una imagen de cómo se ve la interfaz del frontend:
-
-Vista de la Interfaz
-
-¡Gracias por usar este proyecto! Si tienes alguna duda o sugerencia, no dudes en contactarme.
-Notas:
-
-    Asegúrate de que el nombre de la imagen (vista_interfaz.png) coincida con el nombre del archivo que tienes en la raíz del proyecto.
-
-    Si el nombre de la imagen es diferente, reemplázalo en la ruta ![Vista de la Interfaz](./nombre_de_tu_imagen.png).
+<img src="./LansysScreen.png" alt="Vista de la Interfaz" style="display: block; margin: 0 auto; max-width: 100%;" />
